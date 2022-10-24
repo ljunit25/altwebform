@@ -1,17 +1,81 @@
 body{
+  font-family: 'Fira Code', monospace;
+  color: #A57F48;
+  font-size: 14px;
+  background-color: black;
   margin: 0;
   padding: 0;
 }
 
-form{
-  width: 75%;
-  margin: auto;
-
-
-
-  background-color: yellow;
+.container h1{
+  font-size: 24px;
+  color: white;
+  text-align: center;
 }
 
-#email, #subject, #message {
+form{
+  width: 80%;
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea{
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: none;
+  border-radius: 5px;
+  background-color: #141414;
+  padding: 12px 0 12px 12px;
+  margin: 0 0 10px 0;
+}
+input:active, textarea:active,
+input:focus, textarea:focus{
+  background-color: #252525;
+}
+
+button{
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0px;
+  background-color: #A57F48;
+}
+button:hover{
+  background-color: #59472e;
+}
+
+.wrapper{
+  margin: 50px 0 30px 0;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.section{
+  width: 35%;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+@media screen and (max-width: 767px){
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section{
   width: 90%;
+  text-align: center;
+  margin-bottom: 15px;
+
+
 }
